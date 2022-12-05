@@ -5,16 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "api_tests": "npx cypress run --spec cypress/e2e/1-getting-started/api.cy.js",
-    "ui_tests": "npx cypress run --spec cypress/e2e/1-getting-started/cypressProgram.cy.js --reporter cypress-junit-reporter"
+    "api_tests": "npx cypress run --spec cypress/e2e/1-getting-started/api.cy.js --reporter cypress-junit-reporter",
+    "ui_tests": "npx cypress run --spec cypress/e2e/1-getting-started/cypressProgram.cy.js --reporter cypress-multi-reporters"
   },
   "author": "Anton_Rak",
   "license": "ISC",
   "dependencies": {
+    "@reportportal/agent-js-cypress": "^5.1.0",
     "cypress": "^11.0.1",
     "mocha": "^10.1.0"
   },
   "devDependencies": {
-    "cypress-junit-reporter": "^1.3.1"
+    "cypress-junit-reporter": "^1.3.1",
+    "cypress-multi-reporters": "^1.6.1"
   }
 }

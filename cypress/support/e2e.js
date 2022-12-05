@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import '@reportportal/agent-js-cypress/lib/commands/reportPortalCommands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
