@@ -3,14 +3,6 @@ const {data, updatedData} = require('../../../constants/constantVariables');
 
 
 describe("API tests for Cypress Programm", () => {
-    
-    it('should perform a request - return certain item', () => {
-        cy.request('https://petstore.swagger.io/v2/pet/9').then(response => {
-          expect(response.status).to.equal(200);
-          expect(response.body.id).to.equal(9);
-          expect(response.body.name).to.equal('doggie');
-        })
-     })
 
      it('create new pet', () => {
       cy.request('POST', 'https://petstore.swagger.io/v2/pet', data).then(response => {
