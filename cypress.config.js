@@ -8,13 +8,10 @@ module.exports = defineConfig({
   }
   },
   chromeWebSecurity: false,
-  reporter: 'cypress-mochawesome-reporter',
+  reporter: "cypress-junit-reporter",
   reporterOptions: {
-    charts: true,
-    reportPageTitle: 'custom-title',
-    embeddedScreenshots: true,
-    inlineAssets: true,
-    saveAllAttempts: false,
+    mochaFile: "cypress/results/results.xml",
+    toConsole: true
   }
   
 })

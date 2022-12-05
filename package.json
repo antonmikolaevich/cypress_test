@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "api_tests": "npx cypress run --spec cypress/e2e/1-getting-started/api.cy.js",
-    "ui_tests": "npx cypress run --spec cypress/e2e/1-getting-started/cypressProgram.cy.js"
+    "ui_tests": "npx cypress run --spec cypress/e2e/1-getting-started/cypressProgram.cy.js --reporter cypress-junit-reporter"
   },
   "author": "Anton_Rak",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "mocha": "^10.1.0"
   },
   "devDependencies": {
+    "cypress-junit-reporter": "^1.3.1",
     "cypress-mochawesome-reporter": "^3.2.3"
   }
 }
