@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "api_tests": "npx cypress run --spec cypress/e2e/1-getting-started/api.cy.js --reporter cypress-junit-reporter",
+    "api_tests": "npx cypress run --spec cypress/e2e/1-getting-started/api.cy.js --reporter cypress-multi-reporters",
     "ui_tests": "npx cypress run --spec cypress/e2e/1-getting-started/cypressProgram.cy.js --reporter cypress-multi-reporters"
   },
   "author": "Anton_Rak",
